@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Engineer Portfolio – Your Name</title>
+    <meta name="description" content="Portfolio of a Data Engineer showcasing projects in ETL/ELT, streaming, orchestration, cloud data platforms, and scalable data systems." />
+    <meta name="theme-color" content="#0ea5e9" />
+
+    <link rel="canonical" href="https://your-domain.example" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Data Engineer Portfolio – Your Name" />
+    <meta property="og:description" content="Projects and experience across Spark, Airflow, Kafka, dbt, and modern data platforms." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-domain.example" />
+    <meta property="og:image" content="https://your-domain.example/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Data Engineer Portfolio – Your Name" />
+    <meta name="twitter:description" content="Projects and experience across Spark, Airflow, Kafka, dbt, and modern data platforms." />
+    <meta name="twitter:image" content="https://your-domain.example/og-image.png" />
+
+    <!-- Favicon (SVG data URL) -->
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%230ea5e9"/><text x="50%" y="52%" text-anchor="middle" font-family="Segoe UI, Roboto, Arial" font-weight="700" font-size="28" fill="white">DE</text></svg>' />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-content">
+        <a class="brand" href="#home" aria-label="Go to home">
+          <span class="brand-mark" aria-hidden="true">▦</span>
+          <span class="brand-text">Your Name</span>
+          <span class="brand-sub">Data Engineer</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" id="navToggle" title="Menu">
+            <span class="sr-only">Toggle navigation</span>
+            ☰
+          </button>
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle color theme">🌗</button>
+      </div>
+    </header>
+
+    <main id="home" class="site-main" role="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-title">Building reliable, scalable data platforms</h1>
+            <p class="lead">I design, build, and operate end‑to‑end data systems—batch and streaming—that empower analytics, machine learning, and data‑driven products. Specialized in Spark, Airflow, Kafka, dbt, and modern cloud warehouses.</p>
+            <div class="cta">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-ghost">Get in touch</a>
+              <a href="./resume.pdf" class="btn btn-ghost" aria-label="Download resume">Download Résumé</a>
+            </div>
+            <ul class="quick-stats" aria-label="Highlights">
+              <li><strong>8+ yrs</strong> data engineering</li>
+              <li><strong>TB‑PB</strong> scale pipelines</li>
+              <li><strong>99.9%</strong> pipeline SLOs</li>
+            </ul>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="pipeline-card">
+              <div class="node">API</div>
+              <div class="pipe"></div>
+              <div class="node">Kafka</div>
+              <div class="pipe"></div>
+              <div class="node">Spark</div>
+              <div class="pipe"></div>
+              <div class="node">Warehouse</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title">About Me</h2>
+          <p>
+            Data Engineer with a strong focus on reliability, data modeling, and developer
+            experience. I enjoy simplifying complex data problems, building reproducible
+            pipelines, and enabling teams to make better decisions with trustworthy data.
+          </p>
+          <div class="about-grid">
+            <div>
+              <h3>Core Expertise</h3>
+              <ul class="pill-list">
+                <li>ETL/ELT</li>
+                <li>Streaming</li>
+                <li>Data Modeling</li>
+                <li>Orchestration</li>
+                <li>Platform Engineering</li>
+                <li>Cost Optimization</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Toolbox</h3>
+              <ul class="pill-list">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Spark</li>
+                <li>Airflow</li>
+                <li>Kafka</li>
+                <li>dbt</li>
+                <li>Snowflake</li>
+                <li>BigQuery</li>
+                <li>AWS/GCP</li>
+                <li>Terraform</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="projects-title">Projects</h2>
+            <div class="filters" role="group" aria-label="Project filters">
+              <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+              <button class="filter-btn" data-filter="batch">Batch</button>
+              <button class="filter-btn" data-filter="streaming">Streaming</button>
+              <button class="filter-btn" data-filter="orchestration">Orchestration</button>
+              <button class="filter-btn" data-filter="modeling">Modeling</button>
+              <button class="filter-btn" data-filter="infra">Infra</button>
+            </div>
+          </div>
+
+          <div class="project-grid" id="projectGrid">
+            <article class="project-card" data-tags="streaming kafka spark aws" tabindex="0">
+              <header>
+                <h3>Real‑time Clickstream Analytics</h3>
+                <ul class="tags">
+                  <li>Kafka</li><li>Spark Structured Streaming</li><li>AWS</li>
+                </ul>
+              </header>
+              <p>Built a streaming pipeline ingesting 80K+ events/sec with exactly‑once semantics and sub‑minute latency, powering personalization and anomaly detection.</p>
+              <ul class="highlights">
+                <li>99.95% delivery SLO; at‑least‑once to exactly‑once migration</li>
+                <li>Autoscaling on spot capacity cut cost by 42%</li>
+                <li>Data lake table format with time‑travel and schema evolution</li>
+              </ul>
+              <p class="stack">Tech: Kafka, Spark, AWS Kinesis, Iceberg, Glue, Athena</p>
+              <div class="links">
+                <a href="https://github.com/your-gh/clickstream-rt" target="_blank" rel="noopener" aria-label="GitHub repository">GitHub →</a>
+                <a href="#" aria-label="Case study">Case Study →</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-tags="batch dbt modeling bigquery orchestration">
+              <header>
+                <h3>Modern ELT with dbt + BigQuery</h3>
+                <ul class="tags">
+                  <li>dbt</li><li>BigQuery</li><li>Data Modeling</li>
+                </ul>
+              </header>
+              <p>Delivered a Kimball‑inspired warehouse with modular models, tests, and documentation, enabling self‑serve analytics and governed KPIs.</p>
+              <ul class="highlights">
+                <li>400+ models, 500+ tests; CI on PR with Slim CI</li>
+                <li>Incremental models cut runtime from 90 to 18 minutes</li>
+                <li>Semantic layer powering Looker and Hex</li>
+              </ul>
+              <p class="stack">Tech: dbt, BigQuery, Cloud Composer, Terraform, Looker</p>
+              <div class="links">
+                <a href="https://github.com/your-gh/dbt-warehouse" target="_blank" rel="noopener">GitHub →</a>
+                <a href="#">Case Study →</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-tags="orchestration airflow python infra aws">
+              <header>
+                <h3>Airflow Platform as Product</h3>
+                <ul class="tags">
+                  <li>Airflow</li><li>Terraform</li><li>AWS</li>
+                </ul>
+              </header>
+              <p>Hardened multi‑tenant Airflow with blue/green deployments, observability, and developer templates that improved reliability and reduced onboarding time.</p>
+              <ul class="highlights">
+                <li>MTTR down 60%; SLA breaches down 70%</li>
+                <li>Standardized DAGs, sensors, and data quality checks</li>
+                <li>Dagster migration plan for hybrid workloads</li>
+              </ul>
+              <p class="stack">Tech: MWAA, Airflow, Terraform, Prometheus, Grafana</p>
+              <div class="links">
+                <a href="https://github.com/your-gh/airflow-platform" target="_blank" rel="noopener">GitHub →</a>
+                <a href="#">Case Study →</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-tags="infra cost aws snowflake monitoring">
+              <header>
+                <h3>Warehouse Cost Governance</h3>
+                <ul class="tags">
+                  <li>Snowflake</li><li>AWS</li><li>Monitoring</li>
+                </ul>
+              </header>
+              <p>Implemented row‑level access, query tagging, and auto‑suspend/resize policies with FinOps visibility, reducing compute spend significantly.</p>
+              <ul class="highlights">
+                <li>Saved 35% compute; 20% storage via data retention policies</li>
+                <li>P95 query latency improved by 28%</li>
+                <li>Chargeback dashboards by team/project</li>
+              </ul>
+              <p class="stack">Tech: Snowflake, dbt, AWS Lambda, CloudWatch, Terraform</p>
+              <div class="links">
+                <a href="https://github.com/your-gh/snowflake-governance" target="_blank" rel="noopener">GitHub →</a>
+                <a href="#">Case Study →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <div class="container">
+          <h2 id="skills-title">Skills</h2>
+          <div class="skills-grid">
+            <div>
+              <h3>Languages</h3>
+              <ul class="pill-list"><li>Python</li><li>SQL</li><li>Scala</li><li>Bash</li></ul>
+            </div>
+            <div>
+              <h3>Processing</h3>
+              <ul class="pill-list"><li>Spark</li><li>Flink</li><li>Pandas</li><li>Dask</li></ul>
+            </div>
+            <div>
+              <h3>Orchestration</h3>
+              <ul class="pill-list"><li>Airflow</li><li>Dagster</li><li>Prefect</li></ul>
+            </div>
+            <div>
+              <h3>Warehouses/Lakehouse</h3>
+              <ul class="pill-list"><li>Snowflake</li><li>BigQuery</li><li>Redshift</li><li>Delta/Iceberg/Hudi</li></ul>
+            </div>
+            <div>
+              <h3>Messaging/Streaming</h3>
+              <ul class="pill-list"><li>Kafka</li><li>Kinesis</li><li>Pub/Sub</li></ul>
+            </div>
+            <div>
+              <h3>Cloud & Infra</h3>
+              <ul class="pill-list"><li>AWS</li><li>GCP</li><li>Terraform</li><li>Docker</li><li>Kubernetes</li></ul>
+            </div>
+            <div>
+              <h3>Quality & Governance</h3>
+              <ul class="pill-list"><li>Great Expectations</li><li>OpenLineage</li><li>dbt tests</li></ul>
+            </div>
+            <div>
+              <h3>CI/CD & Observability</h3>
+              <ul class="pill-list"><li>GitHub Actions</li><li>Argo</li><li>Prometheus</li><li>Grafana</li></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section" aria-labelledby="experience-title">
+        <div class="container">
+          <h2 id="experience-title">Experience</h2>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <header>
+                  <h3>Senior Data Engineer · Example Corp</h3>
+                  <p class="meta">2022 – Present · Remote</p>
+                </header>
+                <ul>
+                  <li>Architected streaming platform with Kafka + Spark serving 15 teams; standardized schemas and SLAs</li>
+                  <li>Led dbt migration, introduced CI, data contracts, and lineage, reducing data incidents by 50%</li>
+                  <li>Partnered with SRE on on‑call and SLOs; error budget policy reduced alert fatigue</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <header>
+                  <h3>Data Engineer · Startup XYZ</h3>
+                  <p class="meta">2019 – 2022 · San Francisco, CA</p>
+                </header>
+                <ul>
+                  <li>Built ELT on BigQuery with dbt; created curated marts for finance, product, and marketing</li>
+                  <li>Implemented Great Expectations validations; prevented bad data from propagating</li>
+                  <li>Deployed cost controls and tagging; reduced warehouse spend by 30%</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <header>
+                  <h3>Data Analyst → Data Engineer · Acme Inc.</h3>
+                  <p class="meta">2016 – 2019 · New York, NY</p>
+                </header>
+                <ul>
+                  <li>Automated reporting pipelines, improving freshness from daily to hourly</li>
+                  <li>Introduced Airflow for scheduling and observability</li>
+                  <li>Created dimensional models enabling consistent KPIs</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section" aria-labelledby="education-title">
+        <div class="container">
+          <h2 id="education-title">Education & Certifications</h2>
+          <ul class="edu-list">
+            <li>
+              <strong>B.S. in Computer Science</strong> · University Name
+              <span class="meta">2012 – 2016</span>
+            </li>
+            <li>
+              <strong>AWS Certified Data Analytics – Specialty</strong>
+              <span class="meta">2024</span>
+            </li>
+            <li>
+              <strong>Google Professional Data Engineer</strong>
+              <span class="meta">2023</span>
+            </li>
+            <li>
+              <strong>dbt Fundamentals</strong>
+              <span class="meta">2022</span>
+            </li>
+            <li>
+              <strong>Apache Airflow DAG Authoring</strong>
+              <span class="meta">2021</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title">Contact</h2>
+          <p>Open to senior/staff data engineering roles, platform teams, or consulting engagements.</p>
+          <div class="contact-grid">
+            <div>
+              <ul class="contact-list">
+                <li>
+                  <span>✉️</span>
+                  <a id="emailLink" href="mailto:you@example.com">you@example.com</a>
+                  <button id="copyEmail" class="linklike" aria-label="Copy email">Copy</button>
+                </li>
+                <li>
+                  <span>💼</span>
+                  <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+                </li>
+                <li>
+                  <span>🐙</span>
+                  <a href="https://github.com/your-gh" target="_blank" rel="noopener">GitHub</a>
+                </li>
+              </ul>
+            </div>
+            <form class="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain" aria-label="Contact form">
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@domain.com" required />
+              </div>
+              <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="How can I help?" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Your Name · Data Engineer</p>
+        <ul class="social">
+          <li><a href="https://github.com/your-gh" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="mailto:you@example.com" aria-label="Email">Email</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Your Name",
+      "jobTitle": "Data Engineer",
+      "url": "https://your-domain.example",
+      "sameAs": [
+        "https://github.com/your-gh",
+        "https://www.linkedin.com/in/your-handle"
+      ]
+    }
+    </script>
+
+    <script src="./script.js" defer></script>
+    <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+  </body>
+</html>
