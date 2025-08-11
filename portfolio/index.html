@@ -1,16 +1,19 @@
 <!doctype html>
-<html lang="en" data-theme="auto">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Data Engineer Portfolio – Your Name</title>
-    <meta name="description" content="Portfolio of a Data Engineer showcasing projects in ETL/ELT, streaming, orchestration, cloud data platforms, and scalable data systems." />
+    <title>Senior Data Engineer Portfolio – Your Name</title>
+    <meta name="description" content="Portfolio of a Senior Data Engineer showcasing projects in ETL/ELT, streaming, orchestration, cloud data platforms, and scalable data systems." />
     <meta name="theme-color" content="#0ea5e9" />
 
     <link rel="canonical" href="https://your-domain.example" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Data Engineer Portfolio – Your Name" />
+    <meta property="og:title" content="Senior Data Engineer Portfolio – Your Name" />
     <meta property="og:description" content="Projects and experience across Spark, Airflow, Kafka, dbt, and modern data platforms." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://your-domain.example" />
@@ -18,7 +21,7 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Data Engineer Portfolio – Your Name" />
+    <meta name="twitter:title" content="Senior Data Engineer Portfolio – Your Name" />
     <meta name="twitter:description" content="Projects and experience across Spark, Airflow, Kafka, dbt, and modern data platforms." />
     <meta name="twitter:image" content="https://your-domain.example/og-image.png" />
 
@@ -30,17 +33,35 @@
   <body>
     <a class="skip-link" href="#home">Skip to content</a>
 
+    <!-- Background decorative elements -->
+    <div class="bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+
     <header class="site-header" role="banner">
       <div class="container header-content">
         <a class="brand" href="#home" aria-label="Go to home">
-          <span class="brand-mark" aria-hidden="true">▦</span>
-          <span class="brand-text">Your Name</span>
-          <span class="brand-sub">Data Engineer</span>
+          <div class="brand-mark">
+            <span class="brand-icon">▦</span>
+            <div class="brand-glow"></div>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Your Name</span>
+            <span class="brand-title">Senior Data Engineer</span>
+          </div>
         </a>
         <nav class="nav" aria-label="Primary">
           <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" id="navToggle" title="Menu">
             <span class="sr-only">Toggle navigation</span>
-            ☰
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </button>
           <ul id="nav-list" class="nav-list">
             <li><a href="#home">Home</a></li>
@@ -52,36 +73,103 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle color theme">🌗</button>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle color theme">
+          <span class="theme-icon">🌗</span>
+          <div class="theme-glow"></div>
+        </button>
       </div>
     </header>
 
     <main id="home" class="site-main" role="main">
       <section class="hero" aria-labelledby="hero-title">
         <div class="container hero-inner">
-          <div class="hero-copy">
-            <h1 id="hero-title">Building reliable, scalable data platforms</h1>
-            <p class="lead">I design, build, and operate end‑to‑end data systems—batch and streaming—that empower analytics, machine learning, and data‑driven products. Specialized in Spark, Airflow, Kafka, dbt, and modern cloud warehouses.</p>
-            <div class="cta">
-              <a href="#projects" class="btn btn-primary">View Projects</a>
-              <a href="#contact" class="btn btn-ghost">Get in touch</a>
-              <a href="./resume.pdf" class="btn btn-ghost" aria-label="Download resume">Download Résumé</a>
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 id="hero-title" class="hero-title">
+                <span class="title-line">Building reliable,</span>
+                <span class="title-line">scalable data</span>
+                <span class="title-line">platforms</span>
+              </h1>
+              <p class="hero-description">
+                I design, build, and operate end‑to‑end data systems—batch and streaming—that empower analytics, machine learning, and data‑driven products. Specialized in <span class="highlight">Spark</span>, <span class="highlight">Airflow</span>, <span class="highlight">Kafka</span>, <span class="highlight">dbt</span>, and modern cloud warehouses.
+              </p>
+              <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                  <span class="btn-text">View Projects</span>
+                  <div class="btn-glow"></div>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                  <span class="btn-text">Get in touch</span>
+                  <div class="btn-glow"></div>
+                </a>
+                <a href="./resume.pdf" class="btn btn-ghost" aria-label="Download resume">
+                  <span class="btn-text">Download Résumé</span>
+                  <div class="btn-glow"></div>
+                </a>
+              </div>
             </div>
-            <ul class="quick-stats" aria-label="Highlights">
-              <li><strong>8+ yrs</strong> data engineering</li>
-              <li><strong>TB‑PB</strong> scale pipelines</li>
-              <li><strong>99.9%</strong> pipeline SLOs</li>
-            </ul>
+            <div class="hero-visual">
+              <div class="pipeline-visual">
+                <div class="pipeline-node node-api">
+                  <div class="node-icon">📡</div>
+                  <div class="node-label">API</div>
+                  <div class="node-glow"></div>
+                </div>
+                <div class="pipeline-connector">
+                  <div class="connector-line"></div>
+                  <div class="connector-pulse"></div>
+                </div>
+                <div class="pipeline-node node-kafka">
+                  <div class="node-icon">⚡</div>
+                  <div class="node-label">Kafka</div>
+                  <div class="node-glow"></div>
+                </div>
+                <div class="pipeline-connector">
+                  <div class="connector-line"></div>
+                  <div class="connector-pulse"></div>
+                </div>
+                <div class="pipeline-node node-spark">
+                  <div class="node-icon">🔥</div>
+                  <div class="node-label">Spark</div>
+                  <div class="node-glow"></div>
+                </div>
+                <div class="pipeline-connector">
+                  <div class="connector-line"></div>
+                  <div class="connector-pulse"></div>
+                </div>
+                <div class="pipeline-node node-warehouse">
+                  <div class="node-icon">🏗️</div>
+                  <div class="node-label">Warehouse</div>
+                  <div class="node-glow"></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="hero-visual" aria-hidden="true">
-            <div class="pipeline-card">
-              <div class="node">API</div>
-              <div class="pipe"></div>
-              <div class="node">Kafka</div>
-              <div class="pipe"></div>
-              <div class="node">Spark</div>
-              <div class="pipe"></div>
-              <div class="node">Warehouse</div>
+          
+          <div class="metrics-bar">
+            <div class="metric-item">
+              <div class="metric-icon">⏱️</div>
+              <div class="metric-content">
+                <div class="metric-value">8+ yrs</div>
+                <div class="metric-label">data engineering</div>
+              </div>
+              <div class="metric-glow"></div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-icon">📊</div>
+              <div class="metric-content">
+                <div class="metric-value">TB–PB</div>
+                <div class="metric-label">scale pipelines</div>
+              </div>
+              <div class="metric-glow"></div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-icon">🎯</div>
+              <div class="metric-content">
+                <div class="metric-value">99.9%</div>
+                <div class="metric-label">pipeline SLOs</div>
+              </div>
+              <div class="metric-glow"></div>
             </div>
           </div>
         </div>
@@ -89,40 +177,50 @@
 
       <section id="about" class="section" aria-labelledby="about-title">
         <div class="container">
-          <h2 id="about-title">About Me</h2>
-          <p>
-            Data Engineer with a strong focus on reliability, data modeling, and developer
-            experience. I enjoy simplifying complex data problems, building reproducible
-            pipelines, and enabling teams to make better decisions with trustworthy data.
-          </p>
-          <div class="about-grid">
-            <div>
-              <h3>Core Expertise</h3>
-              <ul class="pill-list">
-                <li>ETL/ELT</li>
-                <li>Streaming</li>
-                <li>Data Modeling</li>
-                <li>Orchestration</li>
-                <li>Platform Engineering</li>
-                <li>Cost Optimization</li>
-              </ul>
+          <div class="section-header">
+            <h2 id="about-title" class="section-title">About Me</h2>
+            <div class="section-divider">
+              <div class="divider-line"></div>
+              <div class="divider-glow"></div>
             </div>
-            <div>
-              <h3>Toolbox</h3>
-              <ul class="pill-list">
-                <li>Python</li>
-                <li>SQL</li>
-                <li>Spark</li>
-                <li>Airflow</li>
-                <li>Kafka</li>
-                <li>dbt</li>
-                <li>Snowflake</li>
-                <li>BigQuery</li>
-                <li>AWS/GCP</li>
-                <li>Terraform</li>
-                <li>Docker</li>
-                <li>Kubernetes</li>
-              </ul>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <p class="about-description">
+                Senior Data Engineer with a strong focus on <span class="highlight">reliability</span>, <span class="highlight">data modeling</span>, and <span class="highlight">developer experience</span>. I enjoy simplifying complex data problems, building reproducible pipelines, and enabling teams to make better decisions with trustworthy data.
+              </p>
+              <p class="about-description">
+                My expertise spans from designing scalable streaming architectures to implementing robust data governance frameworks. I believe in building systems that not only work today but scale gracefully for tomorrow's challenges.
+              </p>
+            </div>
+            <div class="about-expertise">
+              <h3 class="expertise-title">Core Expertise</h3>
+              <div class="expertise-grid">
+                <div class="expertise-item">
+                  <div class="expertise-icon">🔄</div>
+                  <span>ETL/ELT</span>
+                </div>
+                <div class="expertise-item">
+                  <div class="expertise-icon">⚡</div>
+                  <span>Streaming</span>
+                </div>
+                <div class="expertise-item">
+                  <div class="expertise-icon">📐</div>
+                  <span>Data Modeling</span>
+                </div>
+                <div class="expertise-item">
+                  <div class="expertise-icon">🎭</div>
+                  <span>Orchestration</span>
+                </div>
+                <div class="expertise-item">
+                  <div class="expertise-icon">🏗️</div>
+                  <span>Platform Engineering</span>
+                </div>
+                <div class="expertise-item">
+                  <div class="expertise-icon">💰</div>
+                  <span>Cost Optimization</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -131,96 +229,155 @@
       <section id="projects" class="section" aria-labelledby="projects-title">
         <div class="container">
           <div class="section-header">
-            <h2 id="projects-title">Projects</h2>
-            <div class="filters" role="group" aria-label="Project filters">
-              <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
-              <button class="filter-btn" data-filter="batch">Batch</button>
-              <button class="filter-btn" data-filter="streaming">Streaming</button>
-              <button class="filter-btn" data-filter="orchestration">Orchestration</button>
-              <button class="filter-btn" data-filter="modeling">Modeling</button>
-              <button class="filter-btn" data-filter="infra">Infra</button>
+            <h2 id="projects-title" class="section-title">Featured Projects</h2>
+            <div class="section-divider">
+              <div class="divider-line"></div>
+              <div class="divider-glow"></div>
             </div>
+          </div>
+          
+          <div class="project-filters" role="group" aria-label="Project filters">
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">
+              <span class="filter-text">All</span>
+              <div class="filter-glow"></div>
+            </button>
+            <button class="filter-btn" data-filter="batch">
+              <span class="filter-text">Batch</span>
+              <div class="filter-glow"></div>
+            </button>
+            <button class="filter-btn" data-filter="streaming">
+              <span class="filter-text">Streaming</span>
+              <div class="filter-glow"></div>
+            </button>
+            <button class="filter-btn" data-filter="orchestration">
+              <span class="filter-text">Orchestration</span>
+              <div class="filter-glow"></div>
+            </button>
+            <button class="filter-btn" data-filter="modeling">
+              <span class="filter-text">Modeling</span>
+              <div class="filter-glow"></div>
+            </button>
+            <button class="filter-btn" data-filter="infra">
+              <span class="filter-text">Infrastructure</span>
+              <div class="filter-glow"></div>
+            </button>
           </div>
 
           <div class="project-grid" id="projectGrid">
             <article class="project-card" data-tags="streaming kafka spark aws" tabindex="0">
-              <header>
-                <h3>Real‑time Clickstream Analytics</h3>
-                <ul class="tags">
-                  <li>Kafka</li><li>Spark Structured Streaming</li><li>AWS</li>
-                </ul>
-              </header>
-              <p>Built a streaming pipeline ingesting 80K+ events/sec with exactly‑once semantics and sub‑minute latency, powering personalization and anomaly detection.</p>
-              <ul class="highlights">
+              <div class="card-header">
+                <h3 class="card-title">Real‑time Clickstream Analytics</h3>
+                <div class="card-tags">
+                  <span class="tag">Kafka</span>
+                  <span class="tag">Spark</span>
+                  <span class="tag">AWS</span>
+                </div>
+              </div>
+              <p class="card-description">Built a streaming pipeline ingesting 80K+ events/sec with exactly‑once semantics and sub‑minute latency, powering personalization and anomaly detection.</p>
+              <ul class="card-highlights">
                 <li>99.95% delivery SLO; at‑least‑once to exactly‑once migration</li>
                 <li>Autoscaling on spot capacity cut cost by 42%</li>
                 <li>Data lake table format with time‑travel and schema evolution</li>
               </ul>
-              <p class="stack">Tech: Kafka, Spark, AWS Kinesis, Iceberg, Glue, Athena</p>
-              <div class="links">
-                <a href="https://github.com/your-gh/clickstream-rt" target="_blank" rel="noopener" aria-label="GitHub repository">GitHub →</a>
-                <a href="#" aria-label="Case study">Case Study →</a>
+              <div class="card-tech">Tech: Kafka, Spark, AWS Kinesis, Iceberg, Glue, Athena</div>
+              <div class="card-links">
+                <a href="https://github.com/your-gh/clickstream-rt" target="_blank" rel="noopener" class="card-link">
+                  <span>GitHub →</span>
+                  <div class="link-glow"></div>
+                </a>
+                <a href="#" class="card-link">
+                  <span>Case Study →</span>
+                  <div class="link-glow"></div>
+                </a>
               </div>
+              <div class="card-glow"></div>
             </article>
 
             <article class="project-card" data-tags="batch dbt modeling bigquery orchestration">
-              <header>
-                <h3>Modern ELT with dbt + BigQuery</h3>
-                <ul class="tags">
-                  <li>dbt</li><li>BigQuery</li><li>Data Modeling</li>
-                </ul>
-              </header>
-              <p>Delivered a Kimball‑inspired warehouse with modular models, tests, and documentation, enabling self‑serve analytics and governed KPIs.</p>
-              <ul class="highlights">
+              <div class="card-header">
+                <h3 class="card-title">Modern ELT with dbt + BigQuery</h3>
+                <div class="card-tags">
+                  <span class="tag">dbt</span>
+                  <span class="tag">BigQuery</span>
+                  <span class="tag">Modeling</span>
+                </div>
+              </div>
+              <p class="card-description">Delivered a Kimball‑inspired warehouse with modular models, tests, and documentation, enabling self‑serve analytics and governed KPIs.</p>
+              <ul class="card-highlights">
                 <li>400+ models, 500+ tests; CI on PR with Slim CI</li>
                 <li>Incremental models cut runtime from 90 to 18 minutes</li>
                 <li>Semantic layer powering Looker and Hex</li>
               </ul>
-              <p class="stack">Tech: dbt, BigQuery, Cloud Composer, Terraform, Looker</p>
-              <div class="links">
-                <a href="https://github.com/your-gh/dbt-warehouse" target="_blank" rel="noopener">GitHub →</a>
-                <a href="#">Case Study →</a>
+              <div class="card-tech">Tech: dbt, BigQuery, Cloud Composer, Terraform, Looker</div>
+              <div class="card-links">
+                <a href="https://github.com/your-gh/dbt-warehouse" target="_blank" rel="noopener" class="card-link">
+                  <span>GitHub →</span>
+                  <div class="link-glow"></div>
+                </a>
+                <a href="#" class="card-link">
+                  <span>Case Study →</span>
+                  <div class="link-glow"></div>
+                </a>
               </div>
+              <div class="card-glow"></div>
             </article>
 
             <article class="project-card" data-tags="orchestration airflow python infra aws">
-              <header>
-                <h3>Airflow Platform as Product</h3>
-                <ul class="tags">
-                  <li>Airflow</li><li>Terraform</li><li>AWS</li>
-                </ul>
-              </header>
-              <p>Hardened multi‑tenant Airflow with blue/green deployments, observability, and developer templates that improved reliability and reduced onboarding time.</p>
-              <ul class="highlights">
+              <div class="card-header">
+                <h3 class="card-title">Airflow Platform as Product</h3>
+                <div class="card-tags">
+                  <span class="tag">Airflow</span>
+                  <span class="tag">Terraform</span>
+                  <span class="tag">AWS</span>
+                </div>
+              </div>
+              <p class="card-description">Hardened multi‑tenant Airflow with blue/green deployments, observability, and developer templates that improved reliability and reduced onboarding time.</p>
+              <ul class="card-highlights">
                 <li>MTTR down 60%; SLA breaches down 70%</li>
                 <li>Standardized DAGs, sensors, and data quality checks</li>
                 <li>Dagster migration plan for hybrid workloads</li>
               </ul>
-              <p class="stack">Tech: MWAA, Airflow, Terraform, Prometheus, Grafana</p>
-              <div class="links">
-                <a href="https://github.com/your-gh/airflow-platform" target="_blank" rel="noopener">GitHub →</a>
-                <a href="#">Case Study →</a>
+              <div class="card-tech">Tech: MWAA, Airflow, Terraform, Prometheus, Grafana</div>
+              <div class="card-links">
+                <a href="https://github.com/your-gh/airflow-platform" target="_blank" rel="noopener" class="card-link">
+                  <span>GitHub →</span>
+                  <div class="link-glow"></div>
+                </a>
+                <a href="#" class="card-link">
+                  <span>Case Study →</span>
+                  <div class="link-glow"></div>
+                </a>
               </div>
+              <div class="card-glow"></div>
             </article>
 
             <article class="project-card" data-tags="infra cost aws snowflake monitoring">
-              <header>
-                <h3>Warehouse Cost Governance</h3>
-                <ul class="tags">
-                  <li>Snowflake</li><li>AWS</li><li>Monitoring</li>
-                </ul>
-              </header>
-              <p>Implemented row‑level access, query tagging, and auto‑suspend/resize policies with FinOps visibility, reducing compute spend significantly.</p>
-              <ul class="highlights">
+              <div class="card-header">
+                <h3 class="card-title">Warehouse Cost Governance</h3>
+                <div class="card-tags">
+                  <span class="tag">Snowflake</span>
+                  <span class="tag">AWS</span>
+                  <span class="tag">Monitoring</span>
+                </div>
+              </div>
+              <p class="card-description">Implemented row‑level access, query tagging, and auto‑suspend/resize policies with FinOps visibility, reducing compute spend significantly.</p>
+              <ul class="card-highlights">
                 <li>Saved 35% compute; 20% storage via data retention policies</li>
                 <li>P95 query latency improved by 28%</li>
                 <li>Chargeback dashboards by team/project</li>
               </ul>
-              <p class="stack">Tech: Snowflake, dbt, AWS Lambda, CloudWatch, Terraform</p>
-              <div class="links">
-                <a href="https://github.com/your-gh/snowflake-governance" target="_blank" rel="noopener">GitHub →</a>
-                <a href="#">Case Study →</a>
+              <div class="card-tech">Tech: Snowflake, dbt, AWS Lambda, CloudWatch, Terraform</div>
+              <div class="card-links">
+                <a href="https://github.com/your-gh/snowflake-governance" target="_blank" rel="noopener" class="card-link">
+                  <span>GitHub →</span>
+                  <div class="link-glow"></div>
+                </a>
+                <a href="#" class="card-link">
+                  <span>Case Study →</span>
+                  <div class="link-glow"></div>
+                </a>
               </div>
+              <div class="card-glow"></div>
             </article>
           </div>
         </div>
@@ -228,39 +385,205 @@
 
       <section id="skills" class="section" aria-labelledby="skills-title">
         <div class="container">
-          <h2 id="skills-title">Skills</h2>
+          <div class="section-header">
+            <h2 id="skills-title" class="section-title">Skills & Technologies</h2>
+            <div class="section-divider">
+              <div class="divider-line"></div>
+              <div class="divider-glow"></div>
+            </div>
+          </div>
+          
           <div class="skills-grid">
-            <div>
-              <h3>Languages</h3>
-              <ul class="pill-list"><li>Python</li><li>SQL</li><li>Scala</li><li>Bash</li></ul>
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="category-icon">💻</span>
+                Languages
+              </h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">Python</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">SQL</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Scala</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Bash</span>
+                  <div class="skill-glow"></div>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>Processing</h3>
-              <ul class="pill-list"><li>Spark</li><li>Flink</li><li>Pandas</li><li>Dask</li></ul>
+
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="category-icon">⚡</span>
+                Processing
+              </h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">Spark</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Flink</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Pandas</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Dask</span>
+                  <div class="skill-glow"></div>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>Orchestration</h3>
-              <ul class="pill-list"><li>Airflow</li><li>Dagster</li><li>Prefect</li></ul>
+
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="category-icon">🎭</span>
+                Orchestration
+              </h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">Airflow</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Dagster</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Prefect</span>
+                  <div class="skill-glow"></div>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>Warehouses/Lakehouse</h3>
-              <ul class="pill-list"><li>Snowflake</li><li>BigQuery</li><li>Redshift</li><li>Delta/Iceberg/Hudi</li></ul>
+
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="category-icon">🏗️</span>
+                Warehouses & Lakehouse
+              </h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">Snowflake</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">BigQuery</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Redshift</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Delta/Iceberg/Hudi</span>
+                  <div class="skill-glow"></div>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>Messaging/Streaming</h3>
-              <ul class="pill-list"><li>Kafka</li><li>Kinesis</li><li>Pub/Sub</li></ul>
+
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="category-icon">📡</span>
+                Messaging & Streaming
+              </h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">Kafka</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Kinesis</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Pub/Sub</span>
+                  <div class="skill-glow"></div>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>Cloud & Infra</h3>
-              <ul class="pill-list"><li>AWS</li><li>GCP</li><li>Terraform</li><li>Docker</li><li>Kubernetes</li></ul>
+
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="category-icon">☁️</span>
+                Cloud & Infrastructure
+              </h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">AWS</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">GCP</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Terraform</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Docker</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Kubernetes</span>
+                  <div class="skill-glow"></div>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>Quality & Governance</h3>
-              <ul class="pill-list"><li>Great Expectations</li><li>OpenLineage</li><li>dbt tests</li></ul>
+
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="category-icon">🔍</span>
+                Quality & Governance
+              </h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">Great Expectations</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">OpenLineage</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">dbt tests</span>
+                  <div class="skill-glow"></div>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>CI/CD & Observability</h3>
-              <ul class="pill-list"><li>GitHub Actions</li><li>Argo</li><li>Prometheus</li><li>Grafana</li></ul>
+
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="category-icon">🚀</span>
+                CI/CD & Observability
+              </h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">GitHub Actions</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Argo</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Prometheus</span>
+                  <div class="skill-glow"></div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Grafana</span>
+                  <div class="skill-glow"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -268,17 +591,27 @@
 
       <section id="experience" class="section" aria-labelledby="experience-title">
         <div class="container">
-          <h2 id="experience-title">Experience</h2>
+          <div class="section-header">
+            <h2 id="experience-title" class="section-title">Professional Experience</h2>
+            <div class="section-divider">
+              <div class="divider-line"></div>
+              <div class="divider-glow"></div>
+            </div>
+          </div>
 
           <div class="timeline">
             <article class="timeline-item">
-              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-marker">
+                <div class="marker-icon">🏢</div>
+                <div class="marker-glow"></div>
+              </div>
               <div class="timeline-content">
-                <header>
-                  <h3>Senior Data Engineer · Example Corp</h3>
-                  <p class="meta">2022 – Present · Remote</p>
+                <header class="timeline-header">
+                  <h3 class="timeline-title">Senior Data Engineer</h3>
+                  <div class="timeline-company">Example Corp</div>
+                  <div class="timeline-meta">2022 – Present · Remote</div>
                 </header>
-                <ul>
+                <ul class="timeline-achievements">
                   <li>Architected streaming platform with Kafka + Spark serving 15 teams; standardized schemas and SLAs</li>
                   <li>Led dbt migration, introduced CI, data contracts, and lineage, reducing data incidents by 50%</li>
                   <li>Partnered with SRE on on‑call and SLOs; error budget policy reduced alert fatigue</li>
@@ -287,13 +620,17 @@
             </article>
 
             <article class="timeline-item">
-              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-marker">
+                <div class="marker-icon">🚀</div>
+                <div class="marker-glow"></div>
+              </div>
               <div class="timeline-content">
-                <header>
-                  <h3>Data Engineer · Startup XYZ</h3>
-                  <p class="meta">2019 – 2022 · San Francisco, CA</p>
+                <header class="timeline-header">
+                  <h3 class="timeline-title">Data Engineer</h3>
+                  <div class="timeline-company">Startup XYZ</div>
+                  <div class="timeline-meta">2019 – 2022 · San Francisco, CA</div>
                 </header>
-                <ul>
+                <ul class="timeline-achievements">
                   <li>Built ELT on BigQuery with dbt; created curated marts for finance, product, and marketing</li>
                   <li>Implemented Great Expectations validations; prevented bad data from propagating</li>
                   <li>Deployed cost controls and tagging; reduced warehouse spend by 30%</li>
@@ -302,13 +639,17 @@
             </article>
 
             <article class="timeline-item">
-              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-marker">
+                <div class="marker-icon">📊</div>
+                <div class="marker-glow"></div>
+              </div>
               <div class="timeline-content">
-                <header>
-                  <h3>Data Analyst → Data Engineer · Acme Inc.</h3>
-                  <p class="meta">2016 – 2019 · New York, NY</p>
+                <header class="timeline-header">
+                  <h3 class="timeline-title">Data Analyst → Data Engineer</h3>
+                  <div class="timeline-company">Acme Inc.</div>
+                  <div class="timeline-meta">2016 – 2019 · New York, NY</div>
                 </header>
-                <ul>
+                <ul class="timeline-achievements">
                   <li>Automated reporting pipelines, improving freshness from daily to hourly</li>
                   <li>Introduced Airflow for scheduling and observability</li>
                   <li>Created dimensional models enabling consistent KPIs</li>
@@ -321,68 +662,133 @@
 
       <section id="education" class="section" aria-labelledby="education-title">
         <div class="container">
-          <h2 id="education-title">Education & Certifications</h2>
-          <ul class="edu-list">
-            <li>
-              <strong>B.S. in Computer Science</strong> · University Name
-              <span class="meta">2012 – 2016</span>
-            </li>
-            <li>
-              <strong>AWS Certified Data Analytics – Specialty</strong>
-              <span class="meta">2024</span>
-            </li>
-            <li>
-              <strong>Google Professional Data Engineer</strong>
-              <span class="meta">2023</span>
-            </li>
-            <li>
-              <strong>dbt Fundamentals</strong>
-              <span class="meta">2022</span>
-            </li>
-            <li>
-              <strong>Apache Airflow DAG Authoring</strong>
-              <span class="meta">2021</span>
-            </li>
-          </ul>
+          <div class="section-header">
+            <h2 id="education-title" class="section-title">Education & Certifications</h2>
+            <div class="section-divider">
+              <div class="divider-line"></div>
+              <div class="divider-glow"></div>
+            </div>
+          </div>
+          
+          <div class="education-grid">
+            <div class="education-item">
+              <div class="education-icon">🎓</div>
+              <div class="education-content">
+                <h3 class="education-title">B.S. in Computer Science</h3>
+                <div class="education-school">University Name</div>
+                <div class="education-year">2012 – 2016</div>
+              </div>
+              <div class="education-glow"></div>
+            </div>
+            
+            <div class="certification-item">
+              <div class="cert-icon">☁️</div>
+              <div class="cert-content">
+                <h3 class="cert-title">AWS Certified Data Analytics – Specialty</h3>
+                <div class="cert-year">2024</div>
+              </div>
+              <div class="cert-glow"></div>
+            </div>
+            
+            <div class="certification-item">
+              <div class="cert-icon">🔍</div>
+              <div class="cert-content">
+                <h3 class="cert-title">Google Professional Data Engineer</h3>
+                <div class="cert-year">2023</div>
+              </div>
+              <div class="cert-glow"></div>
+            </div>
+            
+            <div class="certification-item">
+              <div class="cert-icon">📊</div>
+              <div class="cert-content">
+                <h3 class="cert-title">dbt Fundamentals</h3>
+                <div class="cert-year">2022</div>
+              </div>
+              <div class="cert-glow"></div>
+            </div>
+            
+            <div class="certification-item">
+              <div class="cert-icon">🎭</div>
+              <div class="cert-content">
+                <h3 class="cert-title">Apache Airflow DAG Authoring</h3>
+                <div class="cert-year">2021</div>
+              </div>
+              <div class="cert-glow"></div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="contact" class="section" aria-labelledby="contact-title">
         <div class="container">
-          <h2 id="contact-title">Contact</h2>
-          <p>Open to senior/staff data engineering roles, platform teams, or consulting engagements.</p>
-          <div class="contact-grid">
-            <div>
-              <ul class="contact-list">
-                <li>
-                  <span>✉️</span>
-                  <a id="emailLink" href="mailto:you@example.com">you@example.com</a>
-                  <button id="copyEmail" class="linklike" aria-label="Copy email">Copy</button>
-                </li>
-                <li>
-                  <span>💼</span>
-                  <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
-                </li>
-                <li>
-                  <span>🐙</span>
-                  <a href="https://github.com/your-gh" target="_blank" rel="noopener">GitHub</a>
-                </li>
-              </ul>
+          <div class="section-header">
+            <h2 id="contact-title" class="section-title">Get In Touch</h2>
+            <div class="section-divider">
+              <div class="divider-line"></div>
+              <div class="divider-glow"></div>
             </div>
+          </div>
+          
+          <p class="contact-intro">Open to senior/staff data engineering roles, platform teams, or consulting engagements.</p>
+          
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-details">
+                  <a id="emailLink" href="mailto:you@example.com" class="contact-link">you@example.com</a>
+                  <button id="copyEmail" class="copy-btn" aria-label="Copy email">
+                    <span class="copy-text">Copy</span>
+                    <div class="copy-glow"></div>
+                  </button>
+                </div>
+                <div class="contact-glow"></div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">💼</div>
+                <div class="contact-details">
+                  <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener" class="contact-link">
+                    <span>LinkedIn</span>
+                    <div class="link-glow"></div>
+                  </a>
+                </div>
+                <div class="contact-glow"></div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">🐙</div>
+                <div class="contact-details">
+                  <a href="https://github.com/your-gh" target="_blank" rel="noopener" class="contact-link">
+                    <span>GitHub</span>
+                    <div class="link-glow"></div>
+                  </a>
+                </div>
+                <div class="contact-glow"></div>
+              </div>
+            </div>
+            
             <form class="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain" aria-label="Contact form">
               <div class="form-row">
                 <label for="name">Name</label>
                 <input id="name" name="name" type="text" placeholder="Your name" required />
+                <div class="input-glow"></div>
               </div>
               <div class="form-row">
                 <label for="email">Email</label>
                 <input id="email" name="email" type="email" placeholder="you@domain.com" required />
+                <div class="input-glow"></div>
               </div>
               <div class="form-row">
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4" placeholder="How can I help?" required></textarea>
+                <div class="input-glow"></div>
               </div>
-              <button class="btn btn-primary" type="submit">Send</button>
+              <button class="btn btn-primary submit-btn" type="submit">
+                <span class="btn-text">Send Message</span>
+                <div class="btn-glow"></div>
+              </button>
             </form>
           </div>
         </div>
@@ -390,13 +796,24 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© <span id="year"></span> Your Name · Data Engineer</p>
-        <ul class="social">
-          <li><a href="https://github.com/your-gh" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
-          <li><a href="mailto:you@example.com" aria-label="Email">Email</a></li>
-        </ul>
+      <div class="container footer-content">
+        <div class="footer-info">
+          <p>© <span id="year"></span> Your Name · Senior Data Engineer</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/your-gh" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+            <span class="social-icon">🐙</span>
+            <div class="social-glow"></div>
+          </a>
+          <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <span class="social-icon">💼</span>
+            <div class="social-glow"></div>
+          </a>
+          <a href="mailto:you@example.com" class="social-link" aria-label="Email">
+            <span class="social-icon">✉️</span>
+            <div class="social-glow"></div>
+          </a>
+        </div>
       </div>
     </footer>
 
@@ -405,7 +822,7 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Your Name",
-      "jobTitle": "Data Engineer",
+      "jobTitle": "Senior Data Engineer",
       "url": "https://your-domain.example",
       "sameAs": [
         "https://github.com/your-gh",
